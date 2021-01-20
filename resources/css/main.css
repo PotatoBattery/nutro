@@ -427,7 +427,18 @@ body {
 .language-option input[type="radio"]:checked + label{
     text-decoration: underline;
 }
-
+/*блок ошибок*/
+.errors, .errors_wb{
+    margin-top: 2%;
+}
+.errors p{
+    color: white;
+    margin: 0 !important;
+}
+.errors_wb p{
+    color: black;
+    margin: 0 !important;
+}
 @media only screen and (min-width: 600px) {
     .content {
         position: absolute;

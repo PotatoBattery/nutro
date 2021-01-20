@@ -3,6 +3,7 @@
     /** @var  $translate */
     /** @var  $lang */
     $errors = array();
+    $success = false;
     if(isset($_POST['email']) && isset($_POST['password'])){
         $email = trim(strip_tags(htmlspecialchars($_POST['email'])));
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -12,10 +13,15 @@
         }else{
             array_push($errors, $translate[$lang]['signup']['errors']['email_not_valid']);
         }
-        if(strlen(trim($_POST['password'])) > 8){
+        if(strlen(trim($_POST['password'])) < 8){
             array_push($errors, $translate[$lang]['signup']['errors']['password_too_short']);
-        }elseif (strlen(trim($_POST['password'])) < 32){
+        }elseif (strlen(trim($_POST['password'])) > 32){
             array_push($errors, $translate[$lang]['signup']['errors']['password_too_long']);
+        }
+        if(count($errors) == 0){
+            $password = password_hash(trim($_POST['password']), PASSWORD_DEFAULT);
+            mysqli_query($db_link, "INSERT INTO users (`enable`, email, password) VALUES (0, '".$email."', '".$password."');");
+            $success = true;
         }
     }
 ?>

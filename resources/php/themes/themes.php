@@ -13,7 +13,8 @@
             'button-transparent' => 'button-transparent_wb',
             'field' => 'field_wb',
             'signup-link' => 'signup-link_wb',
-            'music-link' => 'music-link_wb'
+            'music-link' => 'music-link_wb',
+            'errors' => 'errors_wb'
         ),
         'color' => array(
             'wrap' => 'wrap-color',
@@ -27,6 +28,7 @@
             'button-transparent' => 'button-transparent',
             'field' => '',
             'signup-link' => 'signup-link',
-            'music-link' => 'music-link'
+            'music-link' => 'music-link',
+            'errors' => 'errors'
         )
     );
