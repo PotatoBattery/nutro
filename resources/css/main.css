@@ -1,0 +1,840 @@
+/**
+    Основной файл, содержащий общие стили, или элементы, которые будут использоватся больше чем на одной странице
+ */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+/*контейнер для содержимого страницы*/
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/*контейнер с цветным фоном*/
+.wrap-color {
+    background: linear-gradient(180deg, #1894C9, #00C6BA);
+}
+
+/*контейнер для заголовка*/
+.title-container {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 25%;
+}
+
+/*центрированный контейнер для заголовка*/
+.title-container-center {
+    top: 45%;
+}
+
+/*заголовок*/
+.page-title {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    vertical-align: middle;
+    margin: inherit;
+}
+
+/*текст заголовка*/
+.page-title * {
+    font-weight: 400;
+    margin: auto;
+    width: auto;
+}
+
+/*"маленький" размер заголовка"*/
+.page-title-s {
+    font-size: 1em;
+}
+
+/*"чуть больше маленького" размер заголовка"*/
+.page-title-sm {
+    font-size: 1.7em;
+}
+
+/*"средний" размер заголовка"*/
+.page-title-m {
+    font-size: 3em;
+}
+
+/*"большой" размер заголовка"*/
+.page-title-l {
+    font-size: 6em;
+}
+
+/*таймер*/
+.timer{
+    margin-top: 4%;
+}
+
+/*цвет текста заголовка*/
+.text-white {
+    color: #FFFFFF;
+}
+
+/*контейнер для основного контента страницы*/
+.content {
+    position: absolute;
+    width: 75%;
+    margin: 0 12.5%;
+    height: 45%;
+    top: 45%;
+}
+/*контейнер для основного контента страницы без заголовка страницы*/
+.content-without-title{
+    top: 35%;
+}
+/*контейнер для основного контента страницы с статистикой медитации*/
+.content-with-statistic-result{
+    top: 31.5%;
+}
+
+/*блок*/
+.block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+/*блок с внутренним отступом сверху*/
+.block-padding {
+    padding-top: 15%;
+    height: 85%;
+}
+
+.block p {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 30%;
+    margin-top: 10%;
+}
+
+/*кнопка*/
+.button {
+    width: inherit;
+    height: 10%;
+    margin: 0 0 5% 0;
+    font-size: 1em;
+    outline: none;
+    border-radius: 45px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/*кнопка залитая цветом*/
+.button-fill {
+    border: none;
+    color: #0FB0BA;
+    background: #FFFFFF;
+}
+.button-fill_wb {
+    border: none;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+/*кнопка с прозрачным фоном*/
+.button-transparent {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid white;
+}
+.button-transparent_wb {
+    background: transparent;
+    color: #000000;
+    border: 2px solid black;
+}
+
+/*"маленькая кнопка"*/
+.button-s {
+    width: 45%;
+    margin: 0 27.5% 5% 27.5%;
+}
+
+/*"средняя кнопка"*/
+.button-m {
+    width: 62%;
+    margin: 0 21.5% 5% 21.5%;
+}
+/*кнопка подверждения входа и регистрации*/
+.button-submit-signin,
+.button-submit-signup{
+    margin-top: 10% !important;
+}
+/*кнопка после отправки письма*/
+.button-submit-signup_end{
+    width: 45%;
+}
+/*кнопка старта медитации*/
+.button-start{
+    margin-top: 5% !important;
+}
+/*кнопка "поделиться"*/
+.button-share{
+    margin-top: 15% !important;
+}
+/*кнопки на странице статистики после медитации*/
+.button-statistic{
+    width: 80%;
+}
+/*форма в блоке*/
+.block form {
+    width: inherit;
+    height: auto;
+}
+/*форма входа*/
+.signin-form{
+    margin-bottom: 10%;
+}
+/*поля в форме*/
+.field {
+    width: inherit;
+    height: 4.5vh;
+    margin: 0 0 2% 0;
+    border-radius: 45px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    color: #FFFFFF;
+}
+.field_wb{
+    background: transparent;
+    border: 2px solid black;
+    color: #000000;
+}
+/*заполнение в поле формы*/
+.field::placeholder {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.field_wb::placeholder{
+    color: #000000;
+}
+/*кнопка в форме*/
+.block form button {
+    height: 4.5vh;
+}
+
+/*кнопка регистрации ЗАПОМНИ, ЧТО ЭТО ТЕКСТ УЖЕ НАКОНЕЦ*/
+.signup-link {
+    width: auto;
+    font-size: 1em;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.signup-link_wb {
+    width: auto;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000;
+}
+/*кнопка выбора текста*/
+.music-link{
+    position: relative;
+    width: auto;
+    font-size: 1em;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+}
+.music-link_wb{
+    position: relative;
+    width: auto;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+/*иконка настроек*/
+.icon svg{
+    cursor: pointer;
+    width: 100%;
+}
+/*шестеренка для настроек*/
+.settings{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+/*статистика*/
+.statistic{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+/*стрелка*/
+.arrow{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    left: 2%
+}
+/*заливка svg*/
+.st0{
+    fill:#fff;
+}
+.st1{
+    fill:#000;
+}
+/*контент с таймером*/
+.content-with-timer{
+    margin-top: 0;
+}
+/*блок для результата статистики*/
+.statistic-result{
+    position: relative;
+    background: #FFFFFF;
+    width: 95%;
+    height: 75%;
+    margin: 0 2.5% 5% 2.5%;
+    border-radius: 35px;
+}
+
+/*результат статистики*/
+.result{
+    display: inline-block;
+    height: 45%;
+    width: 45%;
+    text-align: center;
+    position: relative;
+}
+
+/*количество времени и количество медитаций*/
+.result .result-count{
+    margin-top: 35%;
+    font-size: 3em;
+    font-weight: 400;
+    color: #69CDD4;
+}
+/*заголовки результата*/
+.result .result-title{
+    font-size: 1em;
+    font-weight: 400;
+    color: #69CDD4;
+}
+/*цитата в результате*/
+.result-quote{
+    font-size: 1.1em;
+    font-weight: 900;
+    color: #69CDD4;
+    margin-top: 20%;
+    height: 30%;
+}
+/*элемент меню настроек*/
+.setting-menu-item{
+    position: relative;
+    text-align: left;
+    margin-bottom: 3%;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFFFFF;
+    height: 7%;
+}
+.setting-menu-item-wb{
+    color: #000000;
+}
+/*чекбокс в элементе меню настроек*/
+.setting-menu-item input[type="checkbox"]{
+    display: none;
+}
+/*настройки лейбла для не нажатого чекбокса*/
+.setting-menu-item input[type="checkbox"] + label{
+    display: inline-block;
+    padding: .6em;
+    border-radius: 20px;
+    border: 3px solid white;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+/*настройки лейбла для нажатого чекбокса*/
+.setting-menu-item input[type="checkbox"]:checked + label{
+    display: inline-block;
+    padding: .8em;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    cursor: pointer;
+    background: linear-gradient(130deg, #3c3b3b, #fffbfb);
+}
+/*ссылки в элементах меню настроек*/
+.setting-menu-item a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.setting-menu-item a.wb{
+    color: #000000;
+}
+/*ссылка отвечающая за переключения языка*/
+.language-link{
+    float: right;
+}
+/*"меню" выбора языка*/
+.language-options{
+    position: absolute;
+    z-index: 15;
+    right: 0;
+    top: 0;
+    background: white;
+    border-radius: 20px;
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+.language-options_wb{
+    background: black;
+}
+/*лейбл опции в списке*/
+.language-options label{
+    color: #2DBAC3;
+    margin-left: 20px;
+}
+.language-options label.label_wb{
+    color: white;
+}
+/*опция в списке*/
+.language-option{
+    margin-top: 20%;
+}
+/*выбранный радио*/
+.language-option input[type="radio"]{
+    display: none;
+}
+/*лейбл рядом с выбранным радио*/
+.language-option input[type="radio"]:checked + label{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+    .content {
+        position: absolute;
+        width: 45%;
+        margin: 0 27.5%;
+        height: 45%;
+        top: 45%;
+    }
+
+    .content-with-timer{
+        margin-top: 0;
+    }
+
+    .content-without-title{
+        top: 35%;
+    }
+
+    .content-with-statistic-result{
+        top: 31.5%;
+    }
+
+    .button-s {
+        width: 45% !important;
+        margin: 0 27.5% !important;
+    }
+
+    .button-m {
+        width: 62% !important;
+        margin: 0 21.5% 5% 21.5% !important;
+    }
+
+    .button-start{
+        margin-top: 5% !important;
+    }
+
+    .button-share{
+        margin-top: 20% !important;
+    }
+
+    /*.button-submit-signin,*/
+    /*.button-submit-signup{*/
+    /*    margin-top: 5% !important;*/
+    /*}*/
+
+    .button,
+    .field{
+        width: inherit;
+        margin: 0 0 2% 0;
+    }
+
+    .settings,
+    .statistic,
+    .arrow{
+         width: 5%;
+     }
+
+    .block p {
+        font-size: 1.1em;
+        margin-bottom: 10%;
+    }
+
+    .statistic-result{
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+
+    .result-quote{
+        font-size: 1.3em;
+    }
+
+    .setting-menu-item{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .content {
+        position: absolute;
+        width: 45%;
+        margin: 0 27.5%;
+        height: 45%;
+        top: 45%;
+    }
+
+    .content-with-timer{
+        margin-top: 0;
+    }
+
+    .content-without-title{
+        top: 35%;
+    }
+
+    .content-with-statistic-result{
+        top: 31.5%;
+    }
+
+    .button-s {
+        width: 25% !important;
+        margin: 0 37.5% 0 37.5%!important;
+    }
+
+    .button-m{
+        width: 30% !important;
+        margin: 0 35% 2% 35% !important;
+    }
+
+    .button-start{
+        margin-top: 5% !important;
+    }
+
+    .button-share{
+        margin-top: 20% !important;
+    }
+
+    /*.button-end,*/
+    /*.button-start,*/
+    /*.button-pause{*/
+    /*    width: 60% !important;*/
+    /*    margin: 0 20% 2% 20% !important;*/
+    /*}*/
+
+    .button-submit-signin,
+    .button-submit-signup{
+        margin-top: 5% !important;
+    }
+
+
+    .button,
+    .field{
+        width: 65%;
+        margin: 0 17.5% 2% 17.5%;
+    }
+    .settings,
+    .statistic,
+    .arrow{
+        width: 3%;
+    }
+
+    .block p {
+        font-size: 1.1em;
+        margin-bottom: 10%;
+    }
+
+    .statistic-result{
+        position: relative;
+        background: #FFFFFF;
+        width: 75%;
+        height: 75%;
+        margin: 0 12.5% 5% 12.5%;
+        border-radius: 35px
+    }
+
+    .result-quote{
+        font-size: 1.2em;
+    }
+
+    .setting-menu-item{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .content {
+        position: absolute;
+        width: 45%;
+        margin: 0 27.5%;
+        height: 45%;
+        top: 45%;
+    }
+
+    .content-with-timer{
+        margin-top: 0;
+    }
+
+    .content-without-title{
+        top: 35%;
+    }
+
+    .content-with-statistic-result{
+        top: 31.5%;
+    }
+
+    .button-s {
+        width: 25% !important;
+        margin: 0 37.5% 0 37.5%!important;
+    }
+
+    .button-m{
+        width: 30% !important;
+        margin: 0 35% 2% 35% !important;
+    }
+
+    .button-start{
+        margin-top: 5% !important;
+    }
+
+    .button-share{
+        margin-top: 20% !important;
+    }
+    /*.button-end,*/
+    /*.button-pause{*/
+    /*    width: 50% !important;*/
+    /*    margin: 0 25% 2% 25% !important;*/
+    /*}*/
+
+
+    .button-submit-signin,
+    .button-submit-signup{
+        margin-top: 5% !important;
+    }
+
+    .block p {
+        font-size: 1.1em;
+        margin-bottom: 10%;
+    }
+
+    .button,
+    .field{
+        width: 50%;
+        margin: 0 25% 2% 25%;
+    }
+    .settings,
+    .statistic,
+    .arrow{
+        width: 3%;
+    }
+
+    .statistic-result{
+        width: 55%;
+        margin: 0 22.5% 5% 22.5%;
+    }
+
+    .result-quote{
+        font-size: 1.2em;
+    }
+
+    .setting-menu-item{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .content {
+        position: absolute;
+        width: 45%;
+        margin: 0 27.5%;
+        height: 45%;
+        top: 45%;
+    }
+
+    .content-with-timer{
+        margin-top: 0;
+    }
+
+    .content-without-title{
+        top: 35%;
+    }
+
+    .content-with-statistic-result{
+        top: 31.5%;
+    }
+
+    .button-s {
+        width: 25% !important;
+        margin: 0 37.5% 0 37.5%!important;
+    }
+
+    .button-m{
+        width: 30% !important;
+        margin: 0 35% 2% 35% !important;
+    }
+
+    .button-start{
+        margin-top: 5% !important;
+    }
+
+    .button-share{
+        margin-top: 10% !important;
+    }
+
+    .button-submit-signin,
+    .button-submit-signup{
+        margin-top: 5% !important;
+    }
+
+    .block p {
+        font-size: 1.1em;
+        margin-bottom: 10%;
+    }
+
+
+    .button,
+    .field{
+        width: 40%;
+        margin: 0 30% 2% 30%
+    }
+    .settings,
+    .statistic,
+    .arrow{
+        width: 2%;
+    }
+
+    .statistic-result{
+        width: 45%;
+        margin: 0 27.5% 5% 27.5%;
+    }
+
+    .result-quote{
+        font-size: 1.1em;
+    }
+
+    .setting-menu-item{
+        width: 45%;
+        margin-left: 27.5%;
+        margin-right: 27.5%;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .content {
+        position: absolute;
+        width: 45%;
+        margin: 0 27.5%;
+        height: 45%;
+        top: 45%;
+    }
+
+    .content-with-timer{
+        margin-top: 0;
+    }
+
+    .content-without-title{
+        top: 35%;
+    }
+
+    .content-with-statistic-result{
+        top: 31.5%;
+    }
+
+    .button-s {
+        width: 20% !important;
+        margin: 0 40% 0 40%!important;
+    }
+
+    .button-m{
+        width: 30% !important;
+        margin: 0 35% 2% 35% !important;
+    }
+
+    .button-start{
+        margin-top: 5% !important;
+    }
+
+    .button-share{
+        margin-top: 10% !important;
+    }
+
+    .button-submit-signin,
+    .button-submit-signup{
+        margin-top: 5% !important;
+    }
+
+    .button-submit-signup_end{
+        width: 25% !important;
+        margin: 0 37.5% 0 37.5%!important;
+    }
+
+    .block p {
+        font-size: 1.3em;
+        margin-bottom: 10%;
+    }
+
+    .button,
+    .field{
+        width: 35%;
+        margin: 0 32.5% 2% 32.5%;
+    }
+    .settings,
+    .statistic,
+    .arrow{
+        width: 1.5%;
+    }
+
+    .statistic-result{
+        width: 40%;
+        margin: 0 30% 5% 30%;
+    }
+
+    .result-quote{
+        font-size: 1.1em;
+    }
+
+    .setting-menu-item{
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+

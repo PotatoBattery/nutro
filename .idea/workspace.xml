@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0baf139-4bf0-436b-96cb-4346f4f78ea2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nERbYC0DsOtzPelwjKrhGW5ScQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ops\OpenServer\domains\nutro\resources\javascript" />
+      <recent name="C:\ops\OpenServer\domains\nutro\resources\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ops\OpenServer\domains\nutro\resources\php\links" />
+      <recent name="C:\ops\OpenServer\domains\nutro" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0baf139-4bf0-436b-96cb-4346f4f78ea2" name="Default Changelist" comment="" />
+      <created>1610953335641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610953335641</updated>
+      <workItem from="1610953337475" duration="1936000" />
+      <workItem from="1610960185834" duration="4800000" />
+      <workItem from="1611035362350" duration="10124000" />
+      <workItem from="1611122457291" duration="8606000" />
+      <workItem from="1611138001174" duration="4406000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2937" y="545" key="NewPhpFileDialog" timestamp="1611139142198">
+      <screen x="1920" y="110" width="1920" height="1040" />
+    </state>
+    <state x="2937" y="545" key="NewPhpFileDialog/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611139142198" />
+    <state x="153" y="-21" width="1403" height="1027" maximized="true" key="dock-window-1" timestamp="1611037336614">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="153" y="-21" width="1403" height="1027" maximized="true" key="dock-window-1/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611037336614" />
+  </component>
+</project>
