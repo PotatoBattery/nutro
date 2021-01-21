@@ -1,11 +1,14 @@
 <?php
+    include '../resources/php/db.php';
+    include '../resources/php/cookies/cookie_control.php';
+    /** @var  $is_auth */
+    if($is_auth) header('Location: http://nutro.local/');
     include '../resources/php/translate/translate.php';
     /** @var  $translate */
     /** @var  $lang */
     include '../resources/php/themes/themes.php';
     /** @var  $themes */
     /** @var  $tm */
-    include '../resources/php/db.php';
     require '../resources/php/signup.php';
     /** @var  $errors */
     /** @var  $success */

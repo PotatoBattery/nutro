@@ -1,8 +1,11 @@
 <?php
+    include './resources/php/db.php';
+    include './resources/php/cookies/cookie_control.php';
+    /** @var  $is_auth */
     include './resources/php/translate/translate.php';
-    include './resources/php/themes/themes.php';
     /** @var  $translate */
     /** @var  $lang */
+    include './resources/php/themes/themes.php';
     /** @var  $themes */
     /** @var  $tm */
 ?>
@@ -17,7 +20,8 @@
 </head>
 <body>
 <div class="wrap <?= $themes[$tm]['wrap'] ?>">
-    <? require './resources/php/links/statisic_link.php'; ?>
+    <? if($is_auth) require './resources/php/links/profile_link.php'; ?>
+    <? require './resources/php/links/statistic_link.php'; ?>
     <div class="title-container">
         <div class="page-title <?= $themes[$tm]['text-white'] ?>">
             <h1 class="page-title-l timer">10:00</h1>

@@ -29,7 +29,12 @@
                 'email' => 'Email',
                 'pass' => 'Password',
                 'submit' => 'OK',
-                'signup' => 'Register now'
+                'signup' => 'Register now',
+                'errors' => array(
+                    'wrong_password' => 'Invalid password entered',
+                    'user_not_active' => 'Account not activated',
+                    'user_not_exist' => 'The specified user is missing from the system',
+                ),
             ),
             'signup' => array(
                 'title' => 'Registration',
@@ -56,6 +61,15 @@
             'mainpage' => array(
                 'title' => 'Nutro',
                 'start_but' => 'Start'
+            ),
+            'profile' => array(
+                'title' => 'Profile',
+                'start_but' => 'Profile',
+                'firstname' => 'Name',
+                'lastname' => 'Surname',
+                'email' => 'Email',
+                'ch_password' => 'Change password',
+                'logout' => 'Logout'
             )
         ),
         'ru' => array(
@@ -86,7 +100,12 @@
                 'email' => 'Адрес эл. почты',
                 'pass' => 'Пароль',
                 'submit' => 'ОК',
-                'signup' => 'Зарегистрироваться'
+                'signup' => 'Зарегистрироваться',
+                'errors' => array(
+                    'wrong_password' => 'Указан неверный пароль',
+                    'user_not_active' => 'Учетная запись не активирована',
+                    'user_not_exist' => 'Указанный пользователь отсутствует в системе',
+                ),
             ),
             'signup' => array(
                 'title' => 'Регистрация',
@@ -113,6 +132,15 @@
             'mainpage' => array(
                 'title' => 'Nutro',
                 'start_but' => 'Начать'
+            ),
+            'profile' => array(
+                'title' => 'Личный кабинет',
+                'header' => 'Личный кабинет',
+                'firstname' => 'Имя',
+                'lastname' => 'Фамилия',
+                'email' => 'Эл. почта',
+                'ch_password' => 'Сменить пароль',
+                'logout' => 'Выйти из аккаунта'
             )
         )
     );

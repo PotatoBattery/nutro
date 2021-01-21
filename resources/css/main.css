@@ -289,6 +289,14 @@ body {
     top: 2%;
     left: 2%
 }
+/*профиль*/
+.profile{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    right: 4%
+}
 /*заливка svg*/
 .st0{
     fill:#fff;
@@ -491,7 +499,8 @@ body {
 
     .settings,
     .statistic,
-    .arrow{
+    .arrow,
+    .profile{
          width: 5%;
      }
 
@@ -577,7 +586,8 @@ body {
     }
     .settings,
     .statistic,
-    .arrow{
+    .arrow,
+    .profile{
         width: 3%;
     }
 
@@ -669,7 +679,8 @@ body {
     }
     .settings,
     .statistic,
-    .arrow{
+    .arrow,
+    .profile{
         width: 3%;
     }
 
@@ -747,7 +758,8 @@ body {
     }
     .settings,
     .statistic,
-    .arrow{
+    .arrow,
+    .profile{
         width: 2%;
     }
 
@@ -829,7 +841,8 @@ body {
     }
     .settings,
     .statistic,
-    .arrow{
+    .arrow,
+    .profile{
         width: 1.5%;
     }
 

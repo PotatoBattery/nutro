@@ -27,7 +27,7 @@ function checkType(){
     document.getElementById('language-options').style.display = "none";
     $.ajax({
         type:'post',
-        url:'/resources/php/setcookie.php?language',
+        url:'/resources/php/cookies/setcookie.php?language',
         data: {
             language:language,
         },
@@ -46,7 +46,7 @@ function changeColorTheme(el){
     }
     $.ajax({
         type:'post',
-        url:'/resources/php/setcookie.php?theme',
+        url:'/resources/php/cookies/setcookie.php?theme',
         data: {
             theme:theme,
         },

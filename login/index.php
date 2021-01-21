@@ -1,10 +1,16 @@
 <?php
+    include '../resources/php/db.php';
+    include '../resources/php/cookies/cookie_control.php';
+    /** @var  $is_auth */
+    if($is_auth) header('Location: http://nutro.local/');
     include '../resources/php/translate/translate.php';
-    include '../resources/php/themes/themes.php';
     /** @var  $translate */
     /** @var  $lang */
+    include '../resources/php/themes/themes.php';
     /** @var  $themes */
     /** @var  $tm */
+    require '../resources/php/login.php';
+    /** @var  $errors */
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -25,12 +31,21 @@
         </div>
         <div class="content">
             <div class="block">
-                <form action="" class="signin-form">
-                    <input type="email" class="field <?= $themes[$tm]['field'] ?>" placeholder="<?= $translate[$lang]['login']['email'] ?>">
-                    <input type="password" class="field <?= $themes[$tm]['field'] ?>" placeholder="<?= $translate[$lang]['login']['pass'] ?>">
+                <form action="/login/" method="post" class="signin-form">
+                    <input type="email" name="email" class="field <?= $themes[$tm]['field'] ?>" placeholder="<?= $translate[$lang]['login']['email'] ?>" value="<?= isset($_POST['email']) ? $_POST['email'] : '' ?>">
+                    <input type="password" name="password" class="field <?= $themes[$tm]['field'] ?>" placeholder="<?= $translate[$lang]['login']['pass'] ?>">
                     <button class="button <?= $themes[$tm]['button-fill'] ?> button-s button-submit-signin"><?= $translate[$lang]['login']['submit'] ?></button>
                 </form>
                 <a href="/signup/" class="<?= $themes[$tm]['signup-link'] ?>"><?= $translate[$lang]['login']['signup'] ?></a>
+                <? if(count($errors) > 0){ ?>
+                    <div class="<?= $themes[$tm]['errors'] ?>">
+                        <?
+                        foreach ($errors as $error){
+                            echo '<p>'.$error.'</p>';
+                        }
+                        ?>
+                    </div>
+                <? } ?>
             </div>
         </div>
         <? require '../resources/php/links/settings_link.php'; ?>

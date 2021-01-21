@@ -1,8 +1,8 @@
 <?php
     include '../resources/php/translate/translate.php';
-    include '../resources/php/themes/themes.php';
     /** @var  $translate */
     /** @var  $lang */
+    include '../resources/php/themes/themes.php';
     /** @var  $themes */
     /** @var  $tm */
     switch ($lang){
@@ -74,12 +74,24 @@
                         <a href="/about/" class="<?= $themes[$tm]['menu-items_link'] ?>"><?= $translate[$lang]['settings']['about'] ?></a>
                     </div>
                     <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
-                        <a href="#" class="<?= $themes[$tm]['menu-items_link'] ?>"><?= $translate[$lang]['settings']['logout'] ?></a>
+                        <a href="" id="logout_link" class="<?= $themes[$tm]['menu-items_link'] ?>"><?= $translate[$lang]['settings']['logout'] ?></a>
                     </div>
                 </div>
             </div>
         </div>
         <script src="./../resources/javascript/jquery.js"></script>
         <script src="../resources/javascript/main.js"></script>
+        <script>
+            $('#logout_link').on("click", function(e){
+                e.preventDefault();
+                $.ajax({
+                    type:'post',
+                    url:'/resources/php/cookies/cookie_logout.php',
+                    success:function(result){
+                        document.location.replace('http://nutro.local/');
+                    }
+                });
+            })
+        </script>
     </body>
 </html>
