@@ -50,9 +50,7 @@
             <div class="content content-without-title">
                 <div class="block">
                     <p>
-                        Мы выслали Вам письмо
-                        для подтверждения регистрации
-                        на почту
+                        <?= $translate[$lang]['signup']['signup_message'] ?>
                     </p>
                     <button class="button <?= $themes[$tm]['button-fill'] ?> button-s button-submit-signup_end " id="send_to_home"><?= $translate[$lang]['signup']['success'] ?></button>
                 </div>

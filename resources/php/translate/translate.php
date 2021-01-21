@@ -38,6 +38,20 @@
                 'pass' => 'Password',
                 'submit' => 'Register now',
                 'success' => 'ОК',
+                'errors' => array(
+                    'user_exist' => 'The user with the specified email address already exists',
+                    'email_not_valid' => 'The email address you provided is not correct',
+                    'password_too_short' => 'The password you specified is too short, the minimum password length is 8 characters',
+                    'password_too_long' =>  'The password you specified is too long, the maximum password length is 32 characters',
+                ),
+                'for_email' => array(
+                    'theme' => 'Registration on Nutro.ru',
+                    'message' => "You have just registered on Nutro.ru!\nTo activate your profile, follow the following link: http://nutro.local/signup/signup_end.php?profile=%s.\nThis letter is generated automatically, do not reply to it.",
+                    'from' => 'From: nutro.ru@gmail.com'
+                ),
+                'signin' => 'Come in',
+                'signup_message' => 'We have sent you a letter to confirm registration by mail',
+                'signip_end_message' => 'Profile activation completed successfully, enjoy your meditations!'
             ),
             'mainpage' => array(
                 'title' => 'Nutro',
@@ -84,9 +98,17 @@
                 'errors' => array(
                     'user_exist' => 'Пользователь с указанным электронным адресом уже существует',
                     'email_not_valid' => 'Указанный Вами электронный адрес - не корректен',
-                    'password_too_short' => 'Указанный Вами пароль слишком короткий',
-                    'password_too_long' =>  'Указанный Вами пароль слишком длинный',
-                )
+                    'password_too_short' => 'Указанный Вами пароль слишком короткий, минимальная длина пароля - 8 символов',
+                    'password_too_long' =>  'Указанный Вами пароль слишком длинный, максимальная длина пароля - 32 символа',
+                ),
+                'for_email' => array(
+                    'theme' => 'Регистрация на сайте Nutro.ru',
+                    'message' => "Вы только что зарегистрировались на сайте Nutro.ru!\nДля активации Вашего профиля перейдите по следующей ссылке: http://nutro.local/signup/signup_end.php?profile=%s.\nЭто письмо сформировано автоматически, не отвечайте на него.",
+                    'from' => 'From: nutro.ru@gmail.com'
+                ),
+                'signin' => 'Войти',
+                'signup_message' => 'Мы выслали Вам письмо для подтверждения регистрации на почту',
+                'signip_end_message' => 'Активация профиля успешно завершена, приятных Вам медитаций!'
             ),
             'mainpage' => array(
                 'title' => 'Nutro',
