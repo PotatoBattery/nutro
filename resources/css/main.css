@@ -297,6 +297,30 @@ body {
     top: 2%;
     right: 4%
 }
+/*карандаш*/
+.pen{
+    width: 6%;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    cursor: pointer;
+}
+/*подтверждение*/
+.yes{
+    width: 6%;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    cursor: pointer;
+}
+/*отказ*/
+.no{
+    width: 6%;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+}
 /*заливка svg*/
 .st0{
     fill:#fff;
@@ -347,6 +371,45 @@ body {
     color: #69CDD4;
     margin-top: 20%;
     height: 30%;
+}
+/*элементы меню профиля*/
+.profile-list-item{
+    position: relative;
+    text-align: left;
+    margin-bottom: 3%;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFFFFF;
+    height: 7%;
+}
+.profile-list-item-wb{
+    color: #000000;
+}
+/*ссылки в профиле*/
+.profile-list-item a{
+    color: #FFFFFF;
+    text-decoration: none;
+    position: absolute;
+    right: 8%;
+}
+.profile-list-item a.wb{
+    color: #000000;
+}
+/*инпут для данных*/
+.profile-input{
+    border: none;
+    color: #0FB0BA;
+    background: #FFFFFF;
+    outline: none;
+    text-align: center;
+    height: 4vh;
+    border-radius: 15px;
+    width: 75%;
+}
+/*выйти из профиля*/
+.profile-logout,
+.profile-password{
+    position: unset!important;
 }
 /*элемент меню настроек*/
 .setting-menu-item{
@@ -447,6 +510,10 @@ body {
     color: black;
     margin: 0 !important;
 }
+/*класс для скрытия элементов*/
+.hidden{
+    display: none;
+}
 @media only screen and (min-width: 600px) {
     .content {
         position: absolute;
@@ -523,7 +590,11 @@ body {
         margin-left: 15%;
         margin-right: 15%;
     }
-
+    .profile-list-item{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 
@@ -614,7 +685,11 @@ body {
         margin-left: 20%;
         margin-right: 20%;
     }
-
+    .profile-list-item{
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -698,7 +773,11 @@ body {
         margin-left: 25%;
         margin-right: 25%;
     }
-
+    .profile-list-item{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -776,6 +855,11 @@ body {
         width: 45%;
         margin-left: 27.5%;
         margin-right: 27.5%;
+    }
+    .profile-list-item{
+        width: 55%;
+        margin-left: 22.5%;
+        margin-right: 22.5%;
     }
 
 }
@@ -859,6 +943,11 @@ body {
         width: 40%;
         margin-left: 30%;
         margin-right: 30%;
+    }
+    .profile-list-item{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 }
 

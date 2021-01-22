@@ -14,7 +14,8 @@
             'field' => 'field_wb',
             'signup-link' => 'signup-link_wb',
             'music-link' => 'music-link_wb',
-            'errors' => 'errors_wb'
+            'errors' => 'errors_wb',
+            'profile-list-item' => 'profile-list-item-wb'
         ),
         'color' => array(
             'wrap' => 'wrap-color',
@@ -29,6 +30,7 @@
             'field' => '',
             'signup-link' => 'signup-link',
             'music-link' => 'music-link',
-            'errors' => 'errors'
+            'errors' => 'errors',
+            'profile-list-item' => ''
         )
     );

@@ -10,31 +10,6 @@
     include '../resources/php/themes/themes.php';
     /** @var  $themes */
     /** @var  $tm */
-//switch ($lang){
-//    case 'ru':
-//        $ru_checked = 'checked';
-//        $en_checked = '';
-//        break;
-//    case 'en':
-//        $ru_checked = '';
-//        $en_checked = 'checked';
-//        break;
-//    default:
-//        $ru_checked = 'checked';
-//        $en_checked = '';
-//        break;
-//}
-//switch ($tm){
-//    case 'wb':
-//        $color_checked = 'checked';
-//        break;
-//    case 'color':
-//        $color_checked = '';
-//        break;
-//    default:
-//        $color_checked = '';
-//        break;
-//}
     $profile_data = mysqli_fetch_assoc(mysqli_query($db_link, "SELECT email, firstname, lastname FROM users WHERE user_id = ".intval($_COOKIE['userID'])));
 ?>
 <!DOCTYPE html>
@@ -56,38 +31,46 @@
     </div>
     <div class="content">
         <div class="block">
-            <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
-                <label for="language"><?= $translate[$lang]['profile']['firstname'] ?></label>
-                <a href="javascript:showNameInput();" id="name" class="language-link <?= $themes[$tm]['menu-items_link'] ?>"><?= $profile_data['firstname'] ?></a>
-                <div id="language-options" class="language-options <?= $themes[$tm]['language-options'] ?>">
-                    <div class="language-option">
-                        <input type="radio" name="lang" id="lang-ru" value="ru" onclick="checkType()" <?= $ru_checked ?>><label for="lang-ru" class="<?= $themes[$tm]['language-options_label'] ?>">Русский</label>
-                    </div>
-                </div>
+            <div class="profile-list-item <?= $themes[$tm]['profile-list-item'] ?>">
+                <label for="firstname"><?= $translate[$lang]['profile']['firstname'] ?></label>
+                <a href="" class="firstname-link"><?= $profile_data['firstname'] ?></a>
+                <? require '../resources/php/links/pencil.php'; ?>
+                <input type="text" name="firstname" class="profile-input hidden">
+                <? require '../resources/php/links/yes.php'; ?>
+                <? require '../resources/php/links/no.php'; ?>
             </div>
-            <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
-                <label for="language"><?= $translate[$lang]['profile']['lastname'] ?></label>
-                <a href="javascript:showSurnameInput();" id="surename" class="language-link <?= $themes[$tm]['menu-items_link'] ?>"><?= $profile_data['lastname'] ?></a>
-                <div id="language-options" class="language-options <?= $themes[$tm]['language-options'] ?>">
-                    <div class="language-option">
-                        <input type="radio" name="lang" id="lang-ru" value="ru" onclick="checkType()" <?= $ru_checked ?>><label for="lang-ru" class="<?= $themes[$tm]['language-options_label'] ?>">Русский</label>
-                    </div>
-                </div>
+            <div class="profile-list-item <?= $themes[$tm]['profile-list-item'] ?>">
+                <label for="lastname"><?= $translate[$lang]['profile']['lastname'] ?></label>
+                <a href="" class="lastname-link"><?= $profile_data['lastname'] ?></a>
+                <? require '../resources/php/links/pencil.php'; ?>
+                <input type="text" name="lastname" class="profile-input hidden">
+                <? require '../resources/php/links/yes.php'; ?>
+                <? require '../resources/php/links/no.php'; ?>
             </div>
-            <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
-                <label for="language"><?= $translate[$lang]['profile']['email'] ?></label>
-                <a href="javascript:showEmailInput();" id="email" class="language-link <?= $themes[$tm]['menu-items_link'] ?>"><?= $profile_data['email'] ?></a>
-                <div id="language-options" class="language-options <?= $themes[$tm]['language-options'] ?>">
-                    <div class="language-option">
-                        <input type="radio" name="lang" id="lang-ru" value="ru" onclick="checkType()" <?= $ru_checked ?>><label for="lang-ru" class="<?= $themes[$tm]['language-options_label'] ?>">Русский</label>
-                    </div>
-                </div>
+            <div class="profile-list-item <?= $themes[$tm]['profile-list-item'] ?>">
+                <label for="firstname"><?= $translate[$lang]['profile']['email'] ?></label>
+                <a href="" class="email-link"><?= $profile_data['email'] ?></a>
+                <? require '../resources/php/links/pencil.php'; ?>
+                <input type="email" name="email" class="profile-input hidden">
+                <? require '../resources/php/links/yes.php'; ?>
+                <? require '../resources/php/links/no.php'; ?>
             </div>
-            <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
-                <a href="" id="chPass_link" class="<?= $themes[$tm]['menu-items_link'] ?>"><?= $translate[$lang]['profile']['ch_password'] ?></a>
+            <div class="profile-list-item <?= $themes[$tm]['profile-list-item'] ?>">
+                <a href="/change_password/" class="<?= $themes[$tm]['menu-items_link'] ?> profile-logout"><?= $translate[$lang]['profile']['ch_password'] ?></a>
             </div>
-            <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
-                <a href="" id="logout_link" class="<?= $themes[$tm]['menu-items_link'] ?>"><?= $translate[$lang]['profile']['logout'] ?></a>
+            <div class="profile-list-item <?= $themes[$tm]['profile-list-item'] ?>">
+                <a href="" id="password_link" id="logout_link" class="<?= $themes[$tm]['menu-items_link'] ?> profile-password"><?= $translate[$lang]['profile']['logout'] ?></a>
+            </div>
+<!--            <div class="setting-menu-item --><?//= $themes[$tm]['menu-items'] ?><!--">-->
+<!--                <label for="language">--><?//= $translate[$lang]['profile']['firstname'] ?><!--</label>-->
+<!--                <a href="javascript:showNameInput();" id="name" class="language-link --><?//= $themes[$tm]['menu-items_link'] ?><!--">--><?//= $profile_data['firstname'] ?><!--</a>-->
+<!--                <div id="language-options" class="language-options --><?//= $themes[$tm]['language-options'] ?><!--">-->
+<!--                    <div class="language-option">-->
+<!--                        <input type="radio" name="lang" id="lang-ru" value="ru" onclick="checkType()" --><?//= $ru_checked ?><!--<!-<label for="lang-ru" class="--><?//= $themes[$tm]['language-options_label'] ?><!--">Русский</label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="<?= $themes[$tm]['errors'] ?> hidden" id="for_errors">
             </div>
         </div>
     </div>
@@ -101,11 +84,83 @@
         $.ajax({
             type:'post',
             url:'/resources/php/cookies/cookie_logout.php',
-            success:function(result){
+            success:function(){
                 document.location.replace('http://nutro.local/');
             }
         });
+    });
+    $('.pen').on('click', function (){
+        let profile_item = $(this).parent();
+        let link = profile_item.find('a');
+        let label = profile_item.find('label');
+        let pen = profile_item.find('.pen');
+        let yes = profile_item.find('.yes');
+        let no = profile_item.find('.no');
+        let input = profile_item.find('.profile-input');
+        link.addClass('hidden');
+        label.addClass('hidden');
+        pen.addClass('hidden');
+        input.val(link.text())
+        input.removeClass('hidden');
+        yes.removeClass('hidden');
+        no.removeClass('hidden');
+    });
+    $('.no').on('click', function(){
+        let errors = $('#for_errors');
+        let profile_item = $(this).parent();
+        let link = profile_item.find('a');
+        let label = profile_item.find('label');
+        let pen = profile_item.find('.pen');
+        let yes = profile_item.find('.yes');
+        let no = profile_item.find('.no');
+        let input = profile_item.find('.profile-input');
+        link.removeClass('hidden');
+        label.removeClass('hidden');
+        pen.removeClass('hidden');
+        input.addClass('hidden');
+        yes.addClass('hidden');
+        no.addClass('hidden');
+        errors.addClass('hidden');
+        errors.find('p').remove();
+    });
+    $('.yes').on('click', function(){
+        let profile_item = $(this).parent();
+        let link = profile_item.find('a');
+        let label = profile_item.find('label');
+        let pen = profile_item.find('.pen');
+        let yes = profile_item.find('.yes');
+        let no = profile_item.find('.no');
+        let input = profile_item.find('.profile-input');
+        $.ajax({
+            type:'post',
+            url:'/resources/php/profile.php',
+            data: {
+                value: input.val(),
+                field: input.attr('name')
+            },
+            success:function(result){
+                let errors = $('#for_errors');
+                if(!result.trim()){
+                    let new_value = input.val();
+                    link.html(new_value);
+                    link.removeClass('hidden');
+                    label.removeClass('hidden');
+                    pen.removeClass('hidden');
+                    input.addClass('hidden');
+                    yes.addClass('hidden');
+                    no.addClass('hidden');
+                    errors.addClass('hidden');
+                    errors.find('p').remove();
+                }else{
+                    errors.removeClass('hidden');
+                    errors.find('p').remove();
+                    errors.html('<p>'+result+'</p>');
+                }
+            }
+        });
     })
+
+
 </script>
 </body>
 </html>

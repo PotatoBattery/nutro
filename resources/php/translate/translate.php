@@ -69,7 +69,31 @@
                 'lastname' => 'Surname',
                 'email' => 'Email',
                 'ch_password' => 'Change password',
-                'logout' => 'Logout'
+                'logout' => 'Logout',
+                'errors' => array(
+                    'user_exist' => 'The user with the specified email address already exists',
+                    'email_not_valid' => 'The email address you provided is not correct',
+                ),
+            ),
+            'change_password' => array(
+                'title' => 'Change Password',
+                'header' => 'Change Password',
+                'pass' => 'Password',
+                'confirm_pass' => 'Confirm password',
+                'submit' => 'Change',
+                'errors' => array(
+                    'passwords_not_equal' => 'The passwords you specified do not match',
+                    'password_too_short' => 'The password you specified is too short, the minimum password length is 8 characters',
+                    'password_too_long' =>  'The password you specified is too long, the maximum password length is 32 characters',
+                ),
+                'for_email' => array(
+                    'theme' => 'Password change on Nutro.ru',
+                    'message' => "You just changed your password on Nutro.ru!\nIn order to avoid mistakes and various troubles, your profile was blocked, to reactivate after changing your password - follow the link: http://nutro.local/change_password/reactivate.php?profile=%s.\nIf it was not you, then we ask you to contact the site administration by mail nutro.ru@gmail.com.\nThis letter is generated automatically, please do not reply to it.\nBest regards, Nutro.ru team, enjoy your meditations.",
+                    'from' => 'From: nutro.ru@gmail.com'
+                ),
+                'change_password_message' => 'Мы выслали Вам письмо для окончания процедуры смены пароля Вам на почту',
+                'signip_end_message' => 'Повторная активация профиля успешно завершена, приятных Вам медитаций!',
+                'signin' => 'Войти'
             )
         ),
         'ru' => array(
@@ -140,7 +164,31 @@
                 'lastname' => 'Фамилия',
                 'email' => 'Эл. почта',
                 'ch_password' => 'Сменить пароль',
-                'logout' => 'Выйти из аккаунта'
+                'logout' => 'Выйти из аккаунта',
+                'errors' => array(
+                    'user_exist' => 'Пользователь с указанным электронным адресом уже существует',
+                    'email_not_valid' => 'Указанный Вами электронный адрес - не корректен',
+                ),
+            ),
+            'change_password' => array(
+                'title' => 'Смена пароля',
+                'header' => 'Смена пароля',
+                'pass' => 'Пароль',
+                'confirm_pass' => 'Подтвердите пароль',
+                'submit' => 'Изменить',
+                'errors' => array(
+                    'passwords_not_equal' => 'Указанные Вами пароли не совпадают',
+                    'password_too_short' => 'Указанный Вами пароль слишком короткий, минимальная длина пароля - 8 символов',
+                    'password_too_long' =>  'Указанный Вами пароль слишком длинный, максимальная длина пароля - 32 символа',
+                ),
+                'for_email' => array(
+                    'theme' => 'Смена пароля на сайте Nutro.ru',
+                    'message' => "Вы только что изменили пароль на сайте Nutro.ru!\nВо избежание ошибок и различных неурядиц Ваш профиль был заблокирован, чтобы провести повторную активацию после смены пароля - перейдите по ссылке: http://nutro.local/change_password/reactivate.php?profile=%s.\nЕсли это были не Вы, то просим Вас связаться с администрацией сайта по почте nutro.ru@gmail.com.\nДанное письмо сформировано автоматически, просим Вас не отвечать на него.\nС уважением команда сайта Nutro.ru, приятных медитаций.",
+                    'from' => 'From: nutro.ru@gmail.com'
+                ),
+                'change_password_message' => 'Мы выслали Вам письмо для окончания процедуры смены пароля Вам на почту',
+                'signip_end_message' => 'Повторная активация профиля успешно завершена, приятных Вам медитаций!',
+                'signin' => 'Войти'
             )
         )
     );

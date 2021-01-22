@@ -21,7 +21,7 @@
         if(count($errors) == 0){
             $password = password_hash(trim($_POST['password']), PASSWORD_DEFAULT);
             $hash = md5($email.$password);
-            mysqli_query($db_link, "INSERT INTO users (`enable`, email, password, tmp_hash) VALUES (0, '".$email."', '".$password."', '".$hash."')");
+            mysqli_query($db_link, "INSERT INTO users (enable, email, password, tmp_hash) VALUES (0, '".$email."', '".$password."', '".$hash."')");
             $message = sprintf($translate[$lang]['signup']['for_email']['message'], $hash);
             mail($email, $translate[$lang]['signup']['for_email']['theme'], $message, $translate[$lang]['signup']['for_email']['from']);
             $success = true;
