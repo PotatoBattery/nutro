@@ -236,12 +236,30 @@ body {
     font-size: 1em;
     font-weight: 400;
     color: #FFFFFF;
+    display: inherit;
 }
 .signup-link_wb {
     width: auto;
     font-size: 1em;
     font-weight: 400;
     color: #000000;
+}
+/*ссылка "забыли пароль?"*/
+.forgot_password_link{
+    width: auto;
+    font-size: 1em;
+    font-weight: 400;
+    color: #FFFFFF;
+    display: inherit;
+    margin-top: 5px;
+}
+.forgot_password_link-wb{
+    width: auto;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000;
+    display: inherit;
+    margin-top: 5px;
 }
 /*кнопка выбора текста*/
 .music-link{

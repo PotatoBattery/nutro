@@ -35,6 +35,7 @@
                     'user_not_active' => 'Account not activated',
                     'user_not_exist' => 'The specified user is missing from the system',
                 ),
+                'forgot_password' => 'Забыли пароль?'
             ),
             'signup' => array(
                 'title' => 'Registration',
@@ -51,7 +52,7 @@
                 ),
                 'for_email' => array(
                     'theme' => 'Registration on Nutro.ru',
-                    'message' => "You have just registered on Nutro.ru!\nTo activate your profile, follow the following link: http://nutro.local/signup/signup_end.php?profile=%s.\nThis letter is generated automatically, do not reply to it.",
+                    'message' => "You have just registered on Nutro.ru!\nTo activate your profile, follow the following link: http://nutro.local/signup/signup_end.php?profile=%s.\nIf the letter did not arrive, check your Spam folder, or wait a bit.This letter is generated automatically, do not reply to it.",
                     'from' => 'From: nutro.ru@gmail.com'
                 ),
                 'signin' => 'Come in',
@@ -88,13 +89,35 @@
                 ),
                 'for_email' => array(
                     'theme' => 'Password change on Nutro.ru',
-                    'message' => "You just changed your password on Nutro.ru!\nIn order to avoid mistakes and various troubles, your profile was blocked, to reactivate after changing your password - follow the link: http://nutro.local/change_password/reactivate.php?profile=%s.\nIf it was not you, then we ask you to contact the site administration by mail nutro.ru@gmail.com.\nThis letter is generated automatically, please do not reply to it.\nBest regards, Nutro.ru team, enjoy your meditations.",
+                    'message' => "You just changed your password on Nutro.ru!\nIn order to avoid mistakes and various troubles, your profile was blocked, to reactivate after changing your password - follow the link: http://nutro.local/change_password/reactivate.php?profile=%s.\nIf it was not you, then we ask you to contact the site administration by mail nutro.ru@gmail.com.\nIf the letter did not arrive, check your Spam folder, or wait a bit.This letter is generated automatically, please do not reply to it.\nBest regards, Nutro.ru team, enjoy your meditations.",
                     'from' => 'From: nutro.ru@gmail.com'
                 ),
-                'change_password_message' => 'Мы выслали Вам письмо для окончания процедуры смены пароля Вам на почту',
-                'signip_end_message' => 'Повторная активация профиля успешно завершена, приятных Вам медитаций!',
-                'signin' => 'Войти'
-            )
+                'change_password_message' => 'We have sent a letter to complete the procedure for changing your password by email',
+                'signip_end_message' => 'Reactivation of the profile has been successfully completed, enjoy your meditations!',
+                'signin' => 'Сome in'
+            ),
+            'forgot_password' => array(
+                'title' => 'Password reset',
+                'header' => 'Password reset',
+                'email' => 'Email',
+                'pass' => 'Password',
+                'confirm_pass' => 'Confirm password',
+                'submit' => 'Reset',
+                'errors' => array(
+                    'user_not_exist' => 'The user with the specified email address is not logged in',
+                    'passwords_not_equal' => 'The passwords you specified do not match',
+                    'password_too_short' => 'The password you specified is too short, the minimum password length is 8 characters',
+                    'password_too_long' =>  'The password you specified is too long, the maximum password length is 32 characters',
+                ),
+                'for_email' => array(
+                    'theme' => 'Password reset on Nutro.ru',
+                    'message' => "You have just reset your password on Nutro.ru!\nIn order to avoid errors and various troubles, your profile was blocked, in order to reactivate after resetting your password - follow the link: http://nutro.local/forgot_password/reactivate.php?profile=%s.\nIf it was not you, then we ask you to contact the site administration by mail nutro.ru@gmail.com.\nIf the letter did not arrive, check your Spam folder, or wait a bit.\nThis letter is generated automatically, please do not reply to it.\nBest regards, Nutro.ru team, enjoy your meditations.",
+                    'from' => 'From: nutro.ru@gmail.com'
+                ),
+                'change_password_message' => 'We have sent an email to complete the password reset procedure.',
+                'signip_end_message' => 'Reactivation of the profile has been successfully completed, enjoy your meditations!',
+                'signin' => 'Сome in'
+            ),
         ),
         'ru' => array(
             'settings' => array(
@@ -130,6 +153,7 @@
                     'user_not_active' => 'Учетная запись не активирована',
                     'user_not_exist' => 'Указанный пользователь отсутствует в системе',
                 ),
+                'forgot_password' => 'Забыли пароль?'
             ),
             'signup' => array(
                 'title' => 'Регистрация',
@@ -146,7 +170,7 @@
                 ),
                 'for_email' => array(
                     'theme' => 'Регистрация на сайте Nutro.ru',
-                    'message' => "Вы только что зарегистрировались на сайте Nutro.ru!\nДля активации Вашего профиля перейдите по следующей ссылке: http://nutro.local/signup/signup_end.php?profile=%s.\nЭто письмо сформировано автоматически, не отвечайте на него.",
+                    'message' => "Вы только что зарегистрировались на сайте Nutro.ru!\nДля активации Вашего профиля перейдите по следующей ссылке: http://nutro.local/signup/signup_end.php?profile=%s.\nЕсли письмо не пришло проверьте папку «Спам», или подождите немного.\nЭто письмо сформировано автоматически, не отвечайте на него.",
                     'from' => 'From: nutro.ru@gmail.com'
                 ),
                 'signin' => 'Войти',
@@ -183,12 +207,34 @@
                 ),
                 'for_email' => array(
                     'theme' => 'Смена пароля на сайте Nutro.ru',
-                    'message' => "Вы только что изменили пароль на сайте Nutro.ru!\nВо избежание ошибок и различных неурядиц Ваш профиль был заблокирован, чтобы провести повторную активацию после смены пароля - перейдите по ссылке: http://nutro.local/change_password/reactivate.php?profile=%s.\nЕсли это были не Вы, то просим Вас связаться с администрацией сайта по почте nutro.ru@gmail.com.\nДанное письмо сформировано автоматически, просим Вас не отвечать на него.\nС уважением команда сайта Nutro.ru, приятных медитаций.",
+                    'message' => "Вы только что изменили пароль на сайте Nutro.ru!\nВо избежание ошибок и различных неурядиц Ваш профиль был заблокирован, чтобы провести повторную активацию после смены пароля - перейдите по ссылке: http://nutro.local/change_password/reactivate.php?profile=%s.\nЕсли это были не Вы, то просим Вас связаться с администрацией сайта по почте nutro.ru@gmail.com.\nЕсли письмо не пришло проверьте папку «Спам», или подождите немного.\nДанное письмо сформировано автоматически, просим Вас не отвечать на него.\nС уважением команда сайта Nutro.ru, приятных медитаций.",
                     'from' => 'From: nutro.ru@gmail.com'
                 ),
-                'change_password_message' => 'Мы выслали Вам письмо для окончания процедуры смены пароля Вам на почту',
+                'change_password_message' => 'Мы выслали письмо для окончания процедуры смены пароля Вам на почту',
                 'signip_end_message' => 'Повторная активация профиля успешно завершена, приятных Вам медитаций!',
                 'signin' => 'Войти'
-            )
+            ),
+            'forgot_password' => array(
+                'title' => 'Сброс пароля',
+                'header' => 'Сброс пароля',
+                'email' => 'Эл. почта',
+                'pass' => 'Пароль',
+                'confirm_pass' => 'Подтвердите пароль',
+                'submit' => 'Сбросить',
+                'errors' => array(
+                    'user_not_exist' => 'Пользователь с указанным электронным адресом отсутствует в системе',
+                    'passwords_not_equal' => 'Указанные Вами пароли не совпадают',
+                    'password_too_short' => 'Указанный Вами пароль слишком короткий, минимальная длина пароля - 8 символов',
+                    'password_too_long' =>  'Указанный Вами пароль слишком длинный, максимальная длина пароля - 32 символа',
+                ),
+                'for_email' => array(
+                    'theme' => 'Сброс пароля на сайте Nutro.ru',
+                    'message' => "Вы только что сбросили пароль на сайте Nutro.ru!\nВо избежание ошибок и различных неурядиц Ваш профиль был заблокирован, чтобы провести повторную активацию после сброса пароля - перейдите по ссылке: http://nutro.local/forgot_password/reactivate.php?profile=%s.\nЕсли это были не Вы, то просим Вас связаться с администрацией сайта по почте nutro.ru@gmail.com.\nЕсли письмо не пришло проверьте папку «Спам», или подождите немного.\nДанное письмо сформировано автоматически, просим Вас не отвечать на него.\nС уважением команда сайта Nutro.ru, приятных медитаций.",
+                    'from' => 'From: nutro.ru@gmail.com'
+                ),
+                'change_password_message' => 'Мы выслали Вам письмо для окончания процедуры сброса пароля Вам на почту',
+                'signip_end_message' => 'Повторная активация профиля успешно завершена, приятных Вам медитаций!',
+                'signin' => 'Войти'
+            ),
         )
     );

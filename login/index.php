@@ -37,6 +37,7 @@
                     <button class="button <?= $themes[$tm]['button-fill'] ?> button-s button-submit-signin"><?= $translate[$lang]['login']['submit'] ?></button>
                 </form>
                 <a href="/signup/" class="<?= $themes[$tm]['signup-link'] ?>"><?= $translate[$lang]['login']['signup'] ?></a>
+                <a href="/forgot_password/" class="forgot_password_link <?= $themes[$tm]['signup-link'] ?>"><?= $translate[$lang]['login']['forgot_password'] ?></a>
                 <? if(count($errors) > 0){ ?>
                     <div class="<?= $themes[$tm]['errors'] ?>">
                         <?
