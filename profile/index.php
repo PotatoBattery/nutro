@@ -61,15 +61,6 @@
             <div class="profile-list-item <?= $themes[$tm]['profile-list-item'] ?>">
                 <a href="" id="password_link" id="logout_link" class="<?= $themes[$tm]['menu-items_link'] ?> profile-password"><?= $translate[$lang]['profile']['logout'] ?></a>
             </div>
-<!--            <div class="setting-menu-item --><?//= $themes[$tm]['menu-items'] ?><!--">-->
-<!--                <label for="language">--><?//= $translate[$lang]['profile']['firstname'] ?><!--</label>-->
-<!--                <a href="javascript:showNameInput();" id="name" class="language-link --><?//= $themes[$tm]['menu-items_link'] ?><!--">--><?//= $profile_data['firstname'] ?><!--</a>-->
-<!--                <div id="language-options" class="language-options --><?//= $themes[$tm]['language-options'] ?><!--">-->
-<!--                    <div class="language-option">-->
-<!--                        <input type="radio" name="lang" id="lang-ru" value="ru" onclick="checkType()" --><?//= $ru_checked ?><!--<!-<label for="lang-ru" class="--><?//= $themes[$tm]['language-options_label'] ?><!--">Русский</label>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
             <div class="<?= $themes[$tm]['errors'] ?> hidden" id="for_errors">
             </div>
         </div>

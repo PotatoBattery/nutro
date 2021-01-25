@@ -74,13 +74,44 @@ body {
 /*таймер*/
 .timer{
     margin-top: 4%;
+    cursor: pointer;
+    width: fit-content
 }
 
 /*цвет текста заголовка*/
 .text-white {
     color: #FFFFFF;
 }
-
+/*значения таймера*/
+.timer-values{
+    background: #FFFFFF;
+    position: absolute;
+    width: 20%;
+    margin: 0 40%;
+    height: 35%;
+    top: 25%;
+    border-radius: 15%;
+    overflow-y: auto;
+}
+.timer-values::-webkit-scrollbar{
+    width: 10px;
+}
+/*значение таймера*/
+.timer-value{
+    text-align: center;
+    font-size: 6em;
+    color: rgba(17, 165, 196, 1);
+    margin: 5px 0 5px 10px;
+    cursor: pointer;
+}
+/*пустое значение*/
+.timer-value-empty{
+    height: 31%;
+}
+/*выбранное значение*/
+.timer-value-selected{
+    text-decoration: underline;
+}
 /*контейнер для основного контента страницы*/
 .content {
     position: absolute;
@@ -178,7 +209,8 @@ body {
     width: 45%;
 }
 /*кнопка старта медитации*/
-.button-start{
+.button-start,
+.button-pause{
     margin-top: 5% !important;
 }
 /*кнопка "поделиться"*/
@@ -563,7 +595,8 @@ body {
         margin: 0 21.5% 5% 21.5% !important;
     }
 
-    .button-start{
+    .button-start,
+    .button-pause{
         margin-top: 5% !important;
     }
 
@@ -647,7 +680,8 @@ body {
         margin: 0 35% 2% 35% !important;
     }
 
-    .button-start{
+    .button-start,
+    .button-pause{
         margin-top: 5% !important;
     }
 
@@ -655,12 +689,6 @@ body {
         margin-top: 20% !important;
     }
 
-    /*.button-end,*/
-    /*.button-start,*/
-    /*.button-pause{*/
-    /*    width: 60% !important;*/
-    /*    margin: 0 20% 2% 20% !important;*/
-    /*}*/
 
     .button-submit-signin,
     .button-submit-signup{
@@ -741,7 +769,8 @@ body {
         margin: 0 35% 2% 35% !important;
     }
 
-    .button-start{
+    .button-start,
+    .button-pause{
         margin-top: 5% !important;
     }
 
@@ -829,7 +858,8 @@ body {
         margin: 0 35% 2% 35% !important;
     }
 
-    .button-start{
+    .button-start,
+    .button-pause{
         margin-top: 5% !important;
     }
 
@@ -913,7 +943,8 @@ body {
         margin: 0 35% 2% 35% !important;
     }
 
-    .button-start{
+    .button-start,
+    .button-pause{
         margin-top: 5% !important;
     }
 
