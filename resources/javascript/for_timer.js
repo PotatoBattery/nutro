@@ -41,6 +41,7 @@ function myTimer(){
     return timer;
 }
 $('#start_but').on('click', function (){
+    $('#selected_time').unbind( "click" );
     $(this).addClass('hidden');
     $('#music').addClass('hidden');
     $('.button-end').removeClass('hidden');
@@ -50,6 +51,9 @@ $('#start_but').on('click', function (){
         clearInterval(e.data.timer);
         $(this).addClass('hidden');
         $('#reset_pause').removeClass('hidden');
+    });
+    $('.button-end').click({timer:timer }, function (e){
+        meditationEnd(e.data.timer);
     });
 });
 $('#reset_pause').on('click', function (){
@@ -61,4 +65,19 @@ $('#reset_pause').on('click', function (){
         $(this).addClass('hidden');
         $('#reset_pause').removeClass('hidden');
     });
-})
+    $('.button-end').click({timer:timer }, function (e){
+        meditationEnd(e.data.timer);
+    });
+});
+function meditationEnd(timerId){
+    clearInterval(timerId);
+    let selectedTime = $('.timer-value-selected').text().split(':');
+    let currentTime = $('#selected_time').text().split(':');
+    let minutes = parseInt(selectedTime[0], 10) - parseInt(currentTime[0], 10);
+    let seconds = (parseInt(selectedTime[1], 10) - parseInt(currentTime[1], 10))*(-1);
+    if(seconds >= 29){
+        minutes = minutes - 1;
+    }
+    let time = minutes+'.'+seconds;
+    $.redirect("/meditation_result/", {time: time}, "POST");
+}

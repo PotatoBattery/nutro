@@ -61,7 +61,10 @@
             ),
             'mainpage' => array(
                 'title' => 'Nutro',
-                'start_but' => 'Start'
+                'start_but' => 'Start',
+                'pause' => 'Pause',
+                'continue' => 'Continue',
+                'end' => 'Finish meditation',
             ),
             'profile' => array(
                 'title' => 'Profile',
@@ -117,6 +120,17 @@
                 'change_password_message' => 'We have sent an email to complete the password reset procedure.',
                 'signip_end_message' => 'Reactivation of the profile has been successfully completed, enjoy your meditations!',
                 'signin' => 'Сome in'
+            ),
+            'meditation_result' => array(
+                'title' => 'Meditation Completed',
+                'header' => 'Meditation Completed',
+                'statistic' => array(
+                    'ok' => 'Open statistics',
+                    'again' => 'Start over'
+                ),
+                'share' => 'Share',
+                'minutes' => 'minutes of meditation',
+                'count' => 'meditations in a row'
             ),
         ),
         'ru' => array(
@@ -179,7 +193,10 @@
             ),
             'mainpage' => array(
                 'title' => 'Nutro',
-                'start_but' => 'Начать'
+                'start_but' => 'Начать',
+                'pause' => 'Пауза',
+                'continue' => 'Продолжить',
+                'end' => 'Завершить медитацию',
             ),
             'profile' => array(
                 'title' => 'Личный кабинет',
@@ -235,6 +252,18 @@
                 'change_password_message' => 'Мы выслали Вам письмо для окончания процедуры сброса пароля Вам на почту',
                 'signip_end_message' => 'Повторная активация профиля успешно завершена, приятных Вам медитаций!',
                 'signin' => 'Войти'
+            ),
+            'meditation_result' => array(
+                'title' => 'Медитация завершена',
+                'header' => 'Медитация завершена',
+                'statistic' => array(
+                    'ok' => 'Открыть статистику',
+                    'again' => 'Начать заново'
+                ),
+                'share' => 'Поделиться',
+                'minute' => 'минуты медитации',
+                'minutes' => 'минут медитации',
+                'count' => 'медитаций подряд'
             ),
         )
     );

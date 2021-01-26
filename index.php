@@ -32,14 +32,15 @@
                 <div class="block">
                     <a href="#" class="<?= $themes[$tm]['music-link'] ?>" id="music">звуки леса</a>
                     <button class="button <?= $themes[$tm]['button-fill'] ?> button-s button-start" id="start_but"><?= $translate[$lang]['mainpage']['start_but'] ?></button>
-                    <button class="button <?= $themes[$tm]['button-transparent'] ?> button-pause hidden">Пауза</button>
-                    <button class="button <?= $themes[$tm]['button-transparent'] ?> button-start hidden" id="reset_pause">Продолжить</button>
-                    <button class="button <?= $themes[$tm]['button-fill'] ?> button-end hidden">Завершить медитацию</button>
+                    <button class="button <?= $themes[$tm]['button-transparent'] ?> button-pause hidden"><?= $translate[$lang]['mainpage']['pause'] ?></button>
+                    <button class="button <?= $themes[$tm]['button-transparent'] ?> button-start hidden" id="reset_pause"><?= $translate[$lang]['mainpage']['continue'] ?></button>
+                    <button class="button <?= $themes[$tm]['button-fill'] ?> button-end hidden"><?= $translate[$lang]['mainpage']['end'] ?></button>
                 </div>
             </div>
             <? require './resources/php/links/settings_link.php'; ?>
         </div>
         <script src="resources/javascript/jquery.js"></script>
+        <script src="resources/javascript/redirect.js"></script>
         <script src="resources/javascript/main.js"></script>
         <script src="resources/javascript/for_timer.js"></script>
     </body>
