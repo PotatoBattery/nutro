@@ -12,6 +12,7 @@
     /** @var  $tm */
     $text = mysqli_fetch_assoc(mysqli_query($db_link, "SELECT quote FROM quotes WHERE `local` = '".$lang."' ORDER BY RAND() LIMIT 1"));
     $time = explode('.', $_POST['time']);
+    if(!$is_auth) include '../resources/php/statistic_control.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -42,20 +43,22 @@
                         <?= $time[0] < 10 ? $translate[$lang]['meditation_result']['minute'] : $translate[$lang]['meditation_result']['minutes'] ?>
                     </div>
                 </div>
-                <div class="result">
-                    <div class="result-count">
-                        2
+                <? if($is_auth){ ?>
+                    <div class="result">
+                        <div class="result-count">
+                            2
+                        </div>
+                        <div class="result-title">
+                            <?= $translate[$lang]['meditation_result']['count'] ?>
+                        </div>
                     </div>
-                    <div class="result-title">
-                        <?= $translate[$lang]['meditation_result']['count'] ?>
-                    </div>
-                </div>
+                <? } ?>
                 <div class="result-quote">
                     &laquo;<?= $text['quote'] ?>&raquo;
                 </div>
             </div>
             <? if($is_auth){ ?>
-                <button class="button <?= $themes[$tm]['button-transparent'] ?> button-statistic"><?= $translate[$lang]['meditation_result']['statistic']['ok'] ?></button>
+                <button class="button <?= $themes[$tm]['button-transparent'] ?> button-statistic" id="common_statistic"><?= $translate[$lang]['meditation_result']['statistic']['ok'] ?></button>
             <? } ?>
             <button class="button <?= $themes[$tm]['button-fill'] ?> button-statistic" id="start_again"><?= $translate[$lang]['meditation_result']['statistic']['again'] ?></button>
             <button class="button <?= $themes[$tm]['button-transparent'] ?> button-share button-statistic"><?= $translate[$lang]['meditation_result']['share'] ?></button>
@@ -66,6 +69,9 @@
 <script src="../resources/javascript/jquery.js"></script>
 <script src="../resources/javascript/main.js"></script>
 <script>
+    $('#common_statistic').click(function(){
+        document.location.replace('http://nutro.local/statistic/');
+    })
     $('#start_again').click(function(){
         document.location.replace('http://nutro.local/');
     });

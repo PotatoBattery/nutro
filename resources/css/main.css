@@ -30,6 +30,11 @@ body {
     top: 25%;
 }
 
+/*контейнер для заголовка статистики*/
+.statistic-title{
+    top: 15%;
+}
+
 /*центрированный контейнер для заголовка*/
 .title-container-center {
     top: 45%;
@@ -128,7 +133,10 @@ body {
 .content-with-statistic-result{
     top: 31.5%;
 }
-
+/*контейнер для основного контента страницы с общей статистикой медитации*/
+.content-with-common-statistic-result{
+    top: 25.5%;
+}
 /*блок*/
 .block {
     width: 100%;
@@ -391,7 +399,32 @@ body {
     margin: 0 2.5% 5% 2.5%;
     border-radius: 35px;
 }
-
+/*данные общей статистики*/
+.statistic_data{
+    width: 100%;
+    margin-bottom: 5%;
+}
+/*один элемент данных в общей статистике*/
+.statistic_data-item{
+    width: 33%;
+    display: inline-block;
+    color: #FFFFFF;
+}
+/*значение статистики*/
+.statistic_data-value{
+    font-size: 3em;
+    font-weight: 400;
+}
+/*подпись значения статистики*/
+.statistic_data-message{
+    font-size: 1em;
+    font-weight: 400;
+}
+/*график*/
+.chart{
+    background: #FFFFFF;
+    border-radius: 20px;
+}
 /*результат статистики*/
 .result{
     display: inline-block;
@@ -585,6 +618,10 @@ body {
         top: 31.5%;
     }
 
+    .content-with-common-statistic-result{
+        top: 25.5%;
+    }
+
     .button-s {
         width: 45% !important;
         margin: 0 27.5% !important;
@@ -668,6 +705,10 @@ body {
 
     .content-with-statistic-result{
         top: 31.5%;
+    }
+
+    .content-with-common-statistic-result{
+        top: 25.5%;
     }
 
     .button-s {
@@ -759,6 +800,10 @@ body {
         top: 31.5%;
     }
 
+    .content-with-common-statistic-result{
+        top: 25.5%;
+    }
+
     .button-s {
         width: 25% !important;
         margin: 0 37.5% 0 37.5%!important;
@@ -848,6 +893,10 @@ body {
         top: 31.5%;
     }
 
+    .content-with-common-statistic-result{
+        top: 25.5%;
+    }
+
     .button-s {
         width: 25% !important;
         margin: 0 37.5% 0 37.5%!important;
@@ -932,6 +981,11 @@ body {
     .content-with-statistic-result{
         top: 31.5%;
     }
+
+    .content-with-common-statistic-result{
+        top: 25.5%;
+    }
+
 
     .button-s {
         width: 20% !important;
