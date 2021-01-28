@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0baf139-4bf0-436b-96cb-4346f4f78ea2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/php/statistic_control.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/statistic/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meditation_result/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/meditation_result/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/javascript/for_timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/javascript/for_timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/php/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/php/statistic_control.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/php/statistic_control.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/css/svg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -87,7 +87,10 @@
       <workItem from="1611207777806" duration="14697000" />
       <workItem from="1611293926101" duration="11739000" />
       <workItem from="1611552133194" duration="17530000" />
-      <workItem from="1611640322258" duration="13556000" />
+      <workItem from="1611640322258" duration="13661000" />
+      <workItem from="1611735010415" duration="51000" />
+      <workItem from="1611815272824" duration="7447000" />
+      <workItem from="1611829500042" duration="2506000" />
     </task>
     <servers />
   </component>
@@ -107,6 +110,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2660" y="385" key="FileChooserDialogImpl" timestamp="1611735059314">
+      <screen x="1920" y="110" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="385" key="FileChooserDialogImpl/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611735059314" />
     <state x="2937" y="545" key="NewPhpFileDialog" timestamp="1611658121096">
       <screen x="1920" y="110" width="1920" height="1040" />
     </state>
@@ -116,10 +123,10 @@
     </state>
     <state x="318" y="0" width="1345" height="1027" maximized="true" key="dock-window-1/0.0.1920.1160/1920.110.1920.1040@0.0.1920.1160" timestamp="1611223234421" />
     <state x="93" y="-7" width="1320" height="1027" maximized="true" key="dock-window-1/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611574522739" />
-    <state x="165" y="-18" width="1320" height="1027" key="dock-window-2" timestamp="1611656080415">
+    <state x="165" y="-18" width="1320" height="1027" key="dock-window-2" timestamp="1611735061663">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="165" y="-18" width="1320" height="1027" key="dock-window-2/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611656080415" />
+    <state x="165" y="-18" width="1320" height="1027" key="dock-window-2/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611735061663" />
     <state x="2587" y="363" width="585" height="592" key="find.popup" timestamp="1611302607984">
       <screen x="1920" y="110" width="1920" height="1040" />
     </state>
@@ -128,5 +135,16 @@
       <screen x="1920" y="110" width="1920" height="1040" />
     </state>
     <state x="2536" y="295" key="run.anything.popup/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611299696731" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/javascript/for_timer.js</url>
+          <line>48</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

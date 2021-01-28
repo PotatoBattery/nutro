@@ -36,6 +36,9 @@ function myTimer(){
         }else{
             minute = time[0];
         }
+        if(minute === '00' && sec === '00'){
+            meditationEnd(timer);
+        }
         $('#selected_time').html(minute+':'+sec);
     }, 1000);
     return timer;

@@ -11,8 +11,14 @@
     /** @var  $themes */
     /** @var  $tm */
     $text = mysqli_fetch_assoc(mysqli_query($db_link, "SELECT quote FROM quotes WHERE `local` = '".$lang."' ORDER BY RAND() LIMIT 1"));
-    $time = explode('.', $_POST['time']);
-    if(!$is_auth) include '../resources/php/statistic_control.php';
+    if($is_auth){
+        include '../resources/php/statistic_control.php';
+        /** @var  $count */
+        /** @var  $time */
+    } else{
+        $tmp_time = explode('.', $_POST['time']);
+        $time = $tmp_time[0];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -37,16 +43,16 @@
             <div class="statistic-result">
                 <div class="result">
                     <div class="result-count">
-                        <?= $time[0] ?>
+                        <?= $time ?>
                     </div>
                     <div class="result-title">
-                        <?= $time[0] < 10 ? $translate[$lang]['meditation_result']['minute'] : $translate[$lang]['meditation_result']['minutes'] ?>
+                        <?= $time < 10 ? $translate[$lang]['meditation_result']['minute'] : $translate[$lang]['meditation_result']['minutes'] ?>
                     </div>
                 </div>
                 <? if($is_auth){ ?>
                     <div class="result">
                         <div class="result-count">
-                            2
+                            <?= $count ?>
                         </div>
                         <div class="result-title">
                             <?= $translate[$lang]['meditation_result']['count'] ?>
