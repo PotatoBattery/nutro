@@ -5,6 +5,8 @@
     include '../resources/php/themes/themes.php';
     /** @var  $themes */
     /** @var  $tm */
+    include '../resources/php/cookies/cookie_control.php';
+    /** @var  $is_auth */
     switch ($lang){
         case 'ru':
             $ru_checked = 'checked';
@@ -36,6 +38,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="-1">
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
         <title><?= $translate[$lang]['settings']['title'] ?></title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../resources/css/main.css">
@@ -73,9 +78,11 @@
                     <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
                         <a href="/about/" class="<?= $themes[$tm]['menu-items_link'] ?>"><?= $translate[$lang]['settings']['about'] ?></a>
                     </div>
-                    <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
-                        <a href="" id="logout_link" class="<?= $themes[$tm]['menu-items_link'] ?>"><?= $translate[$lang]['settings']['logout'] ?></a>
-                    </div>
+                    <? if ($is_auth) { ?>
+                        <div class="setting-menu-item <?= $themes[$tm]['menu-items'] ?>">
+                            <a href="" id="logout_link" class="<?= $themes[$tm]['menu-items_link'] ?>"><?= $translate[$lang]['settings']['logout'] ?></a>
+                        </div>
+                    <? } ?>
                 </div>
             </div>
         </div>

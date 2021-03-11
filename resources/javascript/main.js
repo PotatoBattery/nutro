@@ -1,5 +1,5 @@
 function previousPage(){
-    window.history.back();
+   window.history.back();
 }
 
 function showLanguageOptions(){

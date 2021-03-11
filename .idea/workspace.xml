@@ -20,9 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0baf139-4bf0-436b-96cb-4346f4f78ea2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/php/data_for_chart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/php/translate/translate.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/php/translate/translate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/change_password/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/change_password/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forgot_password/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgot_password/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meditation_result/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/meditation_result/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/php/themes/themes.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/php/themes/themes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/settings/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/statistic/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +99,9 @@
       <workItem from="1611640322258" duration="13661000" />
       <workItem from="1611735010415" duration="51000" />
       <workItem from="1611815272824" duration="7447000" />
-      <workItem from="1611829500042" duration="8621000" />
+      <workItem from="1611829500042" duration="10400000" />
+      <workItem from="1611903903740" duration="13000" />
+      <workItem from="1615442682253" duration="3099000" />
     </task>
     <servers />
   </component>
@@ -109,10 +121,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="385" key="FileChooserDialogImpl" timestamp="1611735059314">
+    <state x="2660" y="385" key="FileChooserDialogImpl" timestamp="1611903916293">
       <screen x="1920" y="110" width="1920" height="1040" />
     </state>
-    <state x="2660" y="385" key="FileChooserDialogImpl/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611735059314" />
+    <state x="2660" y="385" key="FileChooserDialogImpl/0.0.1920.1160/1920.110.1920.1040@1920.110.1920.1040" timestamp="1611903916293" />
     <state x="2937" y="545" key="NewPhpFileDialog" timestamp="1611835484605">
       <screen x="1920" y="110" width="1920" height="1040" />
     </state>

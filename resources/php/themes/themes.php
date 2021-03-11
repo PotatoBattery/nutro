@@ -1,5 +1,5 @@
 <?php
-    $tm = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'color';
+    $tm = $_COOKIE['theme'] != '' ? $_COOKIE['theme'] : 'color';
     $themes = array(
         'wb' => array(
             'wrap' => '',
@@ -16,7 +16,8 @@
             'music-link' => 'music-link_wb',
             'errors' => 'errors_wb',
             'profile-list-item' => 'profile-list-item-wb',
-            'forgot_password_link' => 'forgot_password_link-wb'
+            'forgot_password_link' => 'forgot_password_link-wb',
+            'signin-link-btn' => 'signin-link-btn-wb'
         ),
         'color' => array(
             'wrap' => 'wrap-color',
@@ -33,6 +34,7 @@
             'music-link' => 'music-link',
             'errors' => 'errors',
             'profile-list-item' => '',
-            'forgot_password_link' => ''
+            'forgot_password_link' => '',
+            'signin-link-btn' => 'signin-link-btn'
         )
     );

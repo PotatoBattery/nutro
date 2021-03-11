@@ -73,7 +73,8 @@ body {
 
 /*"большой" размер заголовка"*/
 .page-title-l {
-    font-size: 6em;
+    font-size: 10em;
+    font-weight: 200;
 }
 
 /*таймер*/
@@ -163,7 +164,7 @@ body {
 /*кнопка*/
 .button {
     width: inherit;
-    height: 10%;
+    height: 12%;
     margin: 0 0 5% 0;
     font-size: 1em;
     outline: none;
@@ -223,7 +224,7 @@ body {
 }
 /*кнопка "поделиться"*/
 .button-share{
-    margin-top: 15% !important;
+    margin-top: 5% !important;
 }
 /*кнопки на странице статистики после медитации*/
 .button-statistic{
@@ -317,6 +318,25 @@ body {
     font-weight: 400;
     color: #000000;
     text-align: center;
+}
+/*ссылка на вход*/
+.signin-link-btn{
+    position: relative;
+    width: auto;
+    font-size: 1em;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-align: center;
+    top: 20%;
+}
+.signin-link-btn-wb{
+    position: relative;
+    width: auto;
+    font-size: 1em;
+    font-weight: 200;
+    color: #000000;
+    text-align: center;
+    top: 20%;
 }
 /*иконка настроек*/
 .icon svg{
@@ -454,6 +474,8 @@ body {
     color: #69CDD4;
     margin-top: 20%;
     height: 30%;
+    width: 80%;
+    margin-left: 10%;
 }
 /*элементы меню профиля*/
 .profile-list-item{
@@ -603,7 +625,7 @@ body {
         width: 45%;
         margin: 0 27.5%;
         height: 45%;
-        top: 45%;
+        top: 55%;
     }
 
     .content-with-timer{
@@ -638,7 +660,7 @@ body {
     }
 
     .button-share{
-        margin-top: 20% !important;
+        margin-top: 10% !important;
     }
 
     /*.button-submit-signin,*/
@@ -692,7 +714,7 @@ body {
         width: 45%;
         margin: 0 27.5%;
         height: 45%;
-        top: 45%;
+        top: 55%;
     }
 
     .content-with-timer{
@@ -727,7 +749,7 @@ body {
     }
 
     .button-share{
-        margin-top: 20% !important;
+        margin-top: 10% !important;
     }
 
 
@@ -785,7 +807,7 @@ body {
         width: 45%;
         margin: 0 27.5%;
         height: 45%;
-        top: 45%;
+        top: 55%;
     }
 
     .content-with-timer{
@@ -820,7 +842,7 @@ body {
     }
 
     .button-share{
-        margin-top: 20% !important;
+        margin-top: 10% !important;
     }
     /*.button-end,*/
     /*.button-pause{*/
@@ -878,7 +900,7 @@ body {
         width: 45%;
         margin: 0 27.5%;
         height: 45%;
-        top: 45%;
+        top: 55%;
     }
 
     .content-with-timer{
@@ -913,7 +935,7 @@ body {
     }
 
     .button-share{
-        margin-top: 10% !important;
+        margin-top: 0% !important;
     }
 
     .button-submit-signin,
@@ -967,7 +989,7 @@ body {
         width: 45%;
         margin: 0 27.5%;
         height: 45%;
-        top: 45%;
+        top: 55%;
     }
 
     .content-with-timer{
@@ -1003,7 +1025,7 @@ body {
     }
 
     .button-share{
-        margin-top: 10% !important;
+        margin-top: 0% !important;
     }
 
     .button-submit-signin,

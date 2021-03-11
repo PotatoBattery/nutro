@@ -25,6 +25,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
     <title><?= $translate[$lang]['meditation_result']['title'] ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../resources/css/main.css">
@@ -63,11 +66,13 @@
                     &laquo;<?= $text['quote'] ?>&raquo;
                 </div>
             </div>
-            <? if($is_auth){ ?>
-                <button class="button <?= $themes[$tm]['button-transparent'] ?> button-statistic" id="common_statistic"><?= $translate[$lang]['meditation_result']['statistic']['ok'] ?></button>
-            <? } ?>
             <button class="button <?= $themes[$tm]['button-fill'] ?> button-statistic" id="start_again"><?= $translate[$lang]['meditation_result']['statistic']['again'] ?></button>
             <button class="button <?= $themes[$tm]['button-transparent'] ?> button-share button-statistic"><?= $translate[$lang]['meditation_result']['share'] ?></button>
+            <? if($is_auth){ ?>
+                <button class="button <?= $themes[$tm]['button-transparent'] ?> button-statistic" id="common_statistic"><?= $translate[$lang]['meditation_result']['statistic']['ok'] ?></button>
+            <? } else { ?>
+                <a href="/signin/" class="<?= $themes[$tm]['signin-link-btn'] ?>">Войдите, чтобы отслеживать прогресс</a>
+            <? } ?>
         </div>
     </div>
     <? require '../resources/php/links/settings_link.php'; ?>
