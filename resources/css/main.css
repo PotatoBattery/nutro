@@ -73,8 +73,8 @@ body {
 
 /*"большой" размер заголовка"*/
 .page-title-l {
-    font-size: 10em;
-    font-weight: 200;
+    font-size: 7em;
+    font-weight: 400;
 }
 
 /*таймер*/
@@ -92,8 +92,19 @@ body {
 .timer-values{
     background: #FFFFFF;
     position: absolute;
-    width: 20%;
-    margin: 0 40%;
+    width: 60%;
+    margin: 0 20%;
+    height: 35%;
+    top: 25%;
+    border-radius: 15%;
+    overflow-y: auto;
+}
+
+.timer-values-wb{
+    background: #000000;
+    position: absolute;
+    width: 60%;
+    margin: 0 20%;
     height: 35%;
     top: 25%;
     border-radius: 15%;
@@ -107,6 +118,13 @@ body {
     text-align: center;
     font-size: 6em;
     color: rgba(17, 165, 196, 1);
+    margin: 5px 0 5px 10px;
+    cursor: pointer;
+}
+.timer-value-wb{
+    text-align: center;
+    font-size: 6em;
+    color: #FFFFFF;
     margin: 5px 0 5px 10px;
     cursor: pointer;
 }
@@ -324,7 +342,7 @@ body {
     position: relative;
     width: auto;
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 400;
     color: #FFFFFF;
     text-align: center;
     top: 20%;
@@ -333,7 +351,7 @@ body {
     position: relative;
     width: auto;
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 400;
     color: #000000;
     text-align: center;
     top: 20%;
@@ -419,6 +437,14 @@ body {
     margin: 0 2.5% 5% 2.5%;
     border-radius: 35px;
 }
+.statistic-result-wb{
+    position: relative;
+    background: #FFFFFF;
+    width: 95%;
+    height: 75%;
+    margin: 0 2.5% 5% 2.5%;
+    border-radius: 35px;
+}
 /*данные общей статистики*/
 .statistic_data{
     width: 100%;
@@ -461,21 +487,49 @@ body {
     font-weight: 400;
     color: #69CDD4;
 }
+
+.result .result-count-wb{
+    margin-top: 35%;
+    font-size: 3em;
+    font-weight: 400;
+    color: #FFFFFF;
+}
 /*заголовки результата*/
 .result .result-title{
     font-size: 1em;
     font-weight: 400;
     color: #69CDD4;
 }
+
+.result .result-title-wb{
+    font-size: 1em;
+    font-weight: 400;
+    color: #FFFFFF;
+}
 /*цитата в результате*/
 .result-quote{
     font-size: 1.1em;
     font-weight: 900;
     color: #69CDD4;
-    margin-top: 20%;
-    height: 30%;
+    margin-top: 5%;
+    height: 35%;
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.result-quote-wb{
+    font-size: 1.1em;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-top: 5%;
+    height: 35%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 /*элементы меню профиля*/
 .profile-list-item{
@@ -632,6 +686,11 @@ body {
         margin-top: 0;
     }
 
+    .page-title-l {
+        font-size: 8.5em !important;
+        font-weight: 400 !important;
+    }
+
     .content-without-title{
         top: 35%;
     }
@@ -663,11 +722,6 @@ body {
         margin-top: 10% !important;
     }
 
-    /*.button-submit-signin,*/
-    /*.button-submit-signup{*/
-    /*    margin-top: 5% !important;*/
-    /*}*/
-
     .button,
     .field{
         width: inherit;
@@ -687,6 +741,11 @@ body {
     }
 
     .statistic-result{
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+
+    .statistic-result-wb{
         width: 100%;
         margin: 0 0 5% 0;
     }
@@ -719,6 +778,11 @@ body {
 
     .content-with-timer{
         margin-top: 0;
+    }
+
+    .page-title-l {
+        font-size: 8.5em !important;
+        font-weight: 400 !important;
     }
 
     .content-without-title{
@@ -779,6 +843,15 @@ body {
     .statistic-result{
         position: relative;
         background: #FFFFFF;
+        width: 75%;
+        height: 75%;
+        margin: 0 12.5% 5% 12.5%;
+        border-radius: 35px
+    }
+
+    .statistic-result-wb{
+        position: relative;
+        background: #000000;
         width: 75%;
         height: 75%;
         margin: 0 12.5% 5% 12.5%;
@@ -878,6 +951,11 @@ body {
         margin: 0 22.5% 5% 22.5%;
     }
 
+    .statistic-result-wb{
+        width: 55%;
+        margin: 0 22.5% 5% 22.5%;
+    }
+
     .result-quote{
         font-size: 1.2em;
     }
@@ -966,6 +1044,11 @@ body {
         margin: 0 27.5% 5% 27.5%;
     }
 
+    .statistic-result-wb{
+        width: 45%;
+        margin: 0 27.5% 5% 27.5%;
+    }
+
     .result-quote{
         font-size: 1.1em;
     }
@@ -989,7 +1072,7 @@ body {
         width: 45%;
         margin: 0 27.5%;
         height: 45%;
-        top: 55%;
+        top: 45%;
     }
 
     .content-with-timer{
@@ -1056,6 +1139,11 @@ body {
     }
 
     .statistic-result{
+        width: 40%;
+        margin: 0 30% 5% 30%;
+    }
+
+    .statistic-result-wb{
         width: 40%;
         margin: 0 30% 5% 30%;
     }

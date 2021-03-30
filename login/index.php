@@ -54,6 +54,7 @@
         </div>
         <? require '../resources/php/links/settings_link.php'; ?>
     </div>
+    <script src="../resources/javascript/main.js"></script>
     </body>
 </html>
 

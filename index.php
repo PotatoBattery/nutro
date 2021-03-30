@@ -39,7 +39,7 @@
                     <button class="button <?= $themes[$tm]['button-transparent'] ?> button-start hidden" id="reset_pause"><?= $translate[$lang]['mainpage']['continue'] ?></button>
                     <button class="button <?= $themes[$tm]['button-fill'] ?> button-end hidden"><?= $translate[$lang]['mainpage']['end'] ?></button>
                     <? if (!$is_auth) { ?>
-                        <a href="/signin/" class="<?= $themes[$tm]['signin-link-btn'] ?>">Войдите, чтобы отслеживать прогресс</a>
+                        <a href="/signin/" class="<?= $themes[$tm]['signin-link-btn'] ?>" id="signin-btn">Войдите, чтобы отслеживать прогресс</a>
                     <? } ?>
                 </div>
             </div>

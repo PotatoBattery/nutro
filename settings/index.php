@@ -32,6 +32,10 @@
             $color_checked = '';
             break;
     }
+    if(htmlspecialchars($_SERVER['HTTP_REFERER']) != 'http://nutro.local/settings/')
+    {
+        setcookie('page', htmlspecialchars($_SERVER['HTTP_REFERER']), (time()+86400*30), "/", "nutro.local");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">

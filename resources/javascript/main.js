@@ -1,6 +1,15 @@
-function previousPage(){
-   window.history.back();
-}
+/*function previousPage(url){
+    console.log(url);
+    if(url !== undefined)
+    {
+        window.localtion = url;
+    }
+    else
+    {
+        window.history.back();
+    }
+    history.go(-1);
+}*/
 
 function showLanguageOptions(){
     document.getElementById('language').style.display = "none";
@@ -32,7 +41,7 @@ function checkType(){
             language:language,
         },
         success:function(){
-            location.reload();
+            location.reload(false);
         }
     });
 }
@@ -51,7 +60,7 @@ function changeColorTheme(el){
             theme:theme,
         },
         success:function(){
-            location.reload();
+            window.location = location;
         }
     });
 }
@@ -79,9 +88,9 @@ function setCookie(name, value, pluginOptions = {}) {
     document.cookie = updatedCookie;
 }
 
-function getCookie(name) {
+/*function getCookie(name) {
     matches = document.cookie.match(new RegExp(
         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
     ));
     return matches ? decodeURIComponent(matches[1]) : '';
-}
+}*/

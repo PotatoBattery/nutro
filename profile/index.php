@@ -62,7 +62,7 @@
                 <a href="/change_password/" class="<?= $themes[$tm]['menu-items_link'] ?> profile-logout"><?= $translate[$lang]['profile']['ch_password'] ?></a>
             </div>
             <div class="profile-list-item <?= $themes[$tm]['profile-list-item'] ?>">
-                <a href="" id="password_link" id="logout_link" class="<?= $themes[$tm]['menu-items_link'] ?> profile-password"><?= $translate[$lang]['profile']['logout'] ?></a>
+                <a href="" id="logout_link" class="<?= $themes[$tm]['menu-items_link'] ?> profile-password"><?= $translate[$lang]['profile']['logout'] ?></a>
             </div>
             <div class="<?= $themes[$tm]['errors'] ?> hidden" id="for_errors">
             </div>

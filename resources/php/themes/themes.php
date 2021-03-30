@@ -17,7 +17,13 @@
             'errors' => 'errors_wb',
             'profile-list-item' => 'profile-list-item-wb',
             'forgot_password_link' => 'forgot_password_link-wb',
-            'signin-link-btn' => 'signin-link-btn-wb'
+            'signin-link-btn' => 'signin-link-btn-wb',
+            'statistic-result' => 'statistic-result-wb',
+            'result-quote' => 'result-quote-wb',
+            'result-count' => 'result-count-wb',
+            'result-title' => 'result-title-wb',
+            'timer-values' => 'timer-values-wb',
+            'timer-value' => 'timer-value-wb'
         ),
         'color' => array(
             'wrap' => 'wrap-color',
@@ -35,6 +41,12 @@
             'errors' => 'errors',
             'profile-list-item' => '',
             'forgot_password_link' => '',
-            'signin-link-btn' => 'signin-link-btn'
+            'signin-link-btn' => 'signin-link-btn',
+            'statistic-result' => 'statistic-result',
+            'result-quote' => 'result-quote',
+            'result-count' => 'result-count',
+            'result-title' => 'result-title',
+            'timer-values' => 'timer-values',
+            'timer-value' => 'timer-value'
         )
     );

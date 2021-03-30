@@ -43,12 +43,12 @@
     </div>
     <div class="content content-with-statistic-result">
         <div class="block">
-            <div class="statistic-result">
+            <div class="<?= $themes[$tm]['statistic-result'] ?>">
                 <div class="result">
-                    <div class="result-count">
+                    <div class="<?= $themes[$tm]['result-count'] ?>">
                         <?= $time ?>
                     </div>
-                    <div class="result-title">
+                    <div class="<?= $themes[$tm]['result-title'] ?>">
                         <?= $time < 10 ? $translate[$lang]['meditation_result']['minute'] : $translate[$lang]['meditation_result']['minutes'] ?>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 <? } ?>
-                <div class="result-quote">
+                <div class="<?= $themes[$tm]['result-quote'] ?>">
                     &laquo;<?= $text['quote'] ?>&raquo;
                 </div>
             </div>

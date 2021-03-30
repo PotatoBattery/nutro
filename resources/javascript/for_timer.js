@@ -1,16 +1,16 @@
 $('#selected_time').on('click', function(){
     $('.title-container').addClass('hidden');
     $('.content').addClass('hidden');
-    $('.timer-values').removeClass('hidden');
+    $('#timer-values').removeClass('hidden');
     $('.timer-value-selected')[0].scrollIntoView({block: "center", behavior: "smooth"});
 });
-$('.timer-value').on('click', function(){
+$('.timer-values-selection').on('click', function(){
     $('.timer-value-selected').removeClass('timer-value-selected');
     $(this).addClass('timer-value-selected');
     $('#selected_time').html($(this).text());
     $('.title-container').removeClass('hidden');
     $('.content').removeClass('hidden');
-    $('.timer-values').addClass('hidden');
+    $('#timer-values').addClass('hidden');
 });
 function myTimer(){
     let time = '';
@@ -47,6 +47,7 @@ $('#start_but').on('click', function (){
     $('#selected_time').unbind( "click" );
     $(this).addClass('hidden');
     $('#music').addClass('hidden');
+    $('#signin-btn').addClass('hidden');
     $('.button-end').removeClass('hidden');
     $('.button-pause').removeClass('hidden');
     let timer = myTimer();
